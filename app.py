@@ -3,6 +3,8 @@ import numpy as np
 import nltk
 import streamlit as st
 
+nltk.download('stopwords')
+
 stopwords = set(nltk.corpus.stopwords.words("english"))
 stemmer = nltk.stem.porter.PorterStemmer()
 
