@@ -20,13 +20,7 @@ def transform_text(text):
 def transform_ds(X):
     return np.array(list(map(transform_text, X)))
 
-def length(X):
-    return np.array([[len(x)] for x in X])
-
-def densify(X):
-    return X.toarray()
-
-model = load(filename="logistic_regressor.joblib")
+model = load(filename="staking_classifier.joblib")
 
 st.title("SMS spam classifier")
 
